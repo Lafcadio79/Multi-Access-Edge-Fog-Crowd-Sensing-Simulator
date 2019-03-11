@@ -30,10 +30,6 @@ __license__ = "GPL3"
 
 
 def run():
-   os.makedirs('./Inputs/Mobility/Users/')
-   os.makedirs('./Inputs/Tasks/')
-   os.makedirs('./Outputs/')
-   os.makedirs('./saved/')
    # text_menu module
    main_menu()
 
