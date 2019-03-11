@@ -1,0 +1,33 @@
+ ------------------------------------------------------------------------
+|						                                     			 |
+|			              SIMULATION SETUP				                 |	
+|									                                     |
+ ------------------------------------------------------------------------
+
+-------------------------------TIME-------------------------------------
+|Days of simulation| = 5
+
+-------------------------------USERS------------------------------------
+|Number of users|    = 1000
+|Locomotion|         = 1
+-------------------------------TASKS------------------------------------
+|Number of tasks|    = 20
+|Range of execution| = 500
+|Task duration|      = 60
+|Timeslot duration|  = 60
+-------------------------------FOG NODES--------------------------------
+|Number of nodes|    = 50
+-------------------------------EDGE NODES-------------------------------
+|Number of edges|    = 50
+-------------------------------PLATFORM---------------------------------
+|Type of platform|   = 1
+
+---------IMPORTANT------
+You can put as many days as you desire (maximum 7 days recommended)
+The number of users is preferable between the range [1000 - 3000]
+The execution range of the task is in metres
+Task duration is in minutes
+Timeslot duration should be set as the task duration divider
+Type of platform: 1) MCS 2) Fog-based MCS 3) MEC-based MCS
+
+-------------------------
