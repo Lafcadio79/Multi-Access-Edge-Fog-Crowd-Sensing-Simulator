@@ -1,0 +1,2 @@
+
+Here are saved and deleted the temporary user movements list of events every single time you run a new simulation 
