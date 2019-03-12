@@ -1,4 +1,4 @@
-################################################################################
+##################################################################################
 # Module: users.py
 # Description: The module provides definitions for creation and reading of user
 #              movements list of events files
@@ -6,13 +6,13 @@
 # Created on 24/feb/2019
 # @author: Dimitri Belli             
 # License: GPLv3
-# Web: https://github......
-################################################################################
+# Web: https://github.com/Lafcadio79/Multi-Access-Edge-Fog-Crowd-Sensing-Simulator
+##################################################################################
 # This program is free software; you can redistribuite it and/or modify it under
 # the terms of the GNU/General Pubblic License as published the Free software
 # Foundation; either version 3 of the License, or (at your opinion) any later 
 # version
-################################################################################
+##################################################################################
 
 import networkx as nx
 import random as rd

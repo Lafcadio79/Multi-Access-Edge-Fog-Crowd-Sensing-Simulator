@@ -1,4 +1,4 @@
-################################################################################
+##################################################################################
 # Module: utility.py
 # Description: The module provides utility functions for configuration, computing, 
 #              writing and reading to and from file, and simulation data saving
@@ -6,13 +6,13 @@
 # Created on 24/feb/2019
 # @author: Dimitri Belli             
 # License: GPLv3
-# Web: https://github......
-################################################################################
+# Web: https://github.com/Lafcadio79/Multi-Access-Edge-Fog-Crowd-Sensing-Simulator
+##################################################################################
 # This program is free software; you can redistribuite it and/or modify it under
 # the terms of the GNU/General Pubblic License as published the Free software
 # Foundation; either version 3 of the License, or (at your opinion) any later 
 # version
-################################################################################
+##################################################################################
 
 import os
 import sys
@@ -27,39 +27,11 @@ from tqdm import tqdm
 from users import *
 from tasks import *
 
-def cls():
-   """
-      Clean screen
-   """
-   plt = sys.platform.lower()
-   if(plt == 'win32'):
-      os.system('cls')
-   else:
-      os.system('clear')
-      
-def read_parameters(filename):
-   """
-      Read data from file
-      :param filename:     name of the file to be read
-      
-      :return:             list of simulation parameters
-                           [days, users, number of tasks, communication radius, task duration]
-   """
+
+#################################################
+#                Main MCS procedures            #
+#################################################
    
-   with open(filename) as f:
-      setup_data = f.readlines()
-   
-   days    = int(setup_data[7][23:])    # simulation days
-   users   = int(setup_data[10][23:])   # number of users
-   locom   = int(setup_data[11][23:])   # mean of locomotion
-   num_t   = int(setup_data[13][23:])   # number of tasks
-   dist    = int(setup_data[14][23:])   # coverage radius of the task (in metres)
-   dur_tsk = int(setup_data[15][23:])   # task duration (in minutes)
-   dur_tsl = int(setup_data[16][23:])   # timeslot duration
-   plt     = int(setup_data[22][23:])   # platform
-   
-   return [days, users, locom, num_t, dist, dur_tsk, dur_tsl, plt]
-      
 def candidates_for_task_timeslots(t, ul):
    """
       Compute the candidates for each timeslot
@@ -110,6 +82,49 @@ def candidates_for_task(path_users, path_tasks):
       tt[tlist[i][0]] = cand
       
    return tt
+
+#################################################
+#            Main MEC-MCS procedures            #
+#################################################
+
+#################################################
+#            Main FOG-MCS procedures            #
+#################################################
+
+
+
+def cls():
+   """
+      Clean screen
+   """
+   plt = sys.platform.lower()
+   if(plt == 'win32'):
+      os.system('cls')
+   else:
+      os.system('clear')
+      
+def read_parameters(filename):
+   """
+      Read data from file
+      :param filename:     name of the file to be read
+      
+      :return:             list of simulation parameters
+                           [days, users, number of tasks, communication radius, task duration]
+   """
+   
+   with open(filename) as f:
+      setup_data = f.readlines()
+   
+   days    = int(setup_data[7][23:])    # simulation days
+   users   = int(setup_data[10][23:])   # number of users
+   locom   = int(setup_data[11][23:])   # mean of locomotion
+   num_t   = int(setup_data[13][23:])   # number of tasks
+   dist    = int(setup_data[14][23:])   # coverage radius of the task (in metres)
+   dur_tsk = int(setup_data[15][23:])   # task duration (in minutes)
+   dur_tsl = int(setup_data[16][23:])   # timeslot duration
+   plt     = int(setup_data[22][23:])   # platform
+   
+   return [days, users, locom, num_t, dist, dur_tsk, dur_tsl, plt]
 
    
 def replace(file_path, pattern, subst):
