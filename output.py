@@ -1,4 +1,4 @@
-################################################################################
+##################################################################################
 # Module: output.py
 # Description: The module provides definitions to manage the simulator's input/ 
 #              output
@@ -6,13 +6,13 @@
 # Created on 24/feb/2019
 # @author: Dimitri Belli             
 # License: GPLv3
-# Web: https://github......
-################################################################################
+# Web: https://github.com/Lafcadio79/Multi-Access-Edge-Fog-Crowd-Sensing-Simulator
+##################################################################################
 # This program is free software; you can redistribuite it and/or modify it under
 # the terms of the GNU/General Pubblic License as published the Free software
 # Foundation; either version 3 of the License, or (at your opinion) any later 
 # version
-################################################################################
+##################################################################################
 
 import os
 
@@ -44,6 +44,8 @@ def save_simulation_data(cn, u, t, d, p):
    else:
       plat = "MEC-MCS"
 
+   output_candidates_for_task('./Inputs/Mobility/Users', './Inputs/Tasks/Tasks.txt', "Outputs/tasks_with_candidates.txt")
+   
    os.makedirs("./saved/{}_{}_{}_{}_{}/Users".format(cn,u,t,d,p), exist_ok=True)
    os.makedirs("./saved/{}_{}_{}_{}_{}/Tasks".format(cn,u,t,d,p), exist_ok=True)
    os.makedirs("./saved/{}_{}_{}_{}_{}/Outputs".format(cn,u,t,d,p), exist_ok=True)

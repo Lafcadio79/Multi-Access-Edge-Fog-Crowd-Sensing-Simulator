@@ -1,18 +1,18 @@
-################################################################################
-# Module: menus_exec.py
+##################################################################################
+# Module: exec_menu.py
 # Description: The module manages the user's communication interface through a  
 #              series of command line menus (execution)
 # 
 # Created on 24/feb/2019
 # @author: Dimitri Belli             
 # License: GPLv3
-# Web: https://github......
-################################################################################
+# Web: https://github.com/Lafcadio79/Multi-Access-Edge-Fog-Crowd-Sensing-Simulator
+##################################################################################
 # This program is free software; you can redistribuite it and/or modify it under
 # the terms of the GNU/General Pubblic License as published the Free software
 # Foundation; either version 3 of the License, or (at your opinion) any later 
 # version
-################################################################################
+##################################################################################
 
 from output import *
 from utility import *
@@ -114,9 +114,10 @@ def create_a_new_list_of_events():
             save_simulation_data(city, param[1], param[3], param[0], plat)
             break
          else:
+            output_candidates_for_task('./Inputs/Mobility/Users', './Inputs/Tasks/Tasks.txt', "Outputs/tasks_with_candidates.txt")
             break
             
-   output_candidates_for_task('./Inputs/Mobility/Users', './Inputs/Tasks/Tasks.txt', "Outputs/tasks_with_candidates.txt")
+
    
    # remove all the temporary files generated
    shutil.rmtree('./Inputs/Mobility/Users/', ignore_errors=True)
