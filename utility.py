@@ -112,8 +112,7 @@ def read_parameters(filename):
                            [days, users, number of tasks, communication radius, task duration]
    """
    
-   with open(filename) as f:
-      setup_data = f.readlines()
+   setup_data = read_setup_data(filename)
    
    days    = int(setup_data[7][23:])    # simulation days
    users   = int(setup_data[10][23:])   # number of users
@@ -155,6 +154,21 @@ def file_copy(orig, dest):
       for file in files:
          path_file = os.path.join(root, file)
          shutil.copy(path_file, dest)
+
+def read_setup_data(f):
+   """
+       Read all lines of a file
+       
+       :param f:     filename
+       
+      :return:       list of strings
+   """
+   sd = []
+   
+   with open(f) as fl:
+      sd = fl.readlines()
+   
+   return sd
 
 def import_or_install(p):
    """

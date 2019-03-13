@@ -180,11 +180,8 @@ def change_number_of_days():
 
    cls()
 
-   setup_data = []
+   setup_data = read_setup_data("Setup.txt")
    
-   with open("Setup.txt") as f:
-      setup_data = f.readlines()
-
    while(True):
       try:
          days = int(input("How many days? "))
@@ -201,11 +198,8 @@ def change_number_of_users():
 
    cls()
 
-   setup_data = []
+   setup_data = read_setup_data("Setup.txt")
    
-   with open("Setup.txt") as f:
-      setup_data = f.readlines()
-      
    while(True):
       try:
          users = int(input("How many users? "))
@@ -222,10 +216,8 @@ def change_number_of_tasks():
 
    cls()
 
-   setup_data = []
+   setup_data = read_setup_data("Setup.txt")
    
-   with open("Setup.txt") as f:
-      setup_data = f.readlines()
    while(True):
       try:
          tasks = int(input("How many tasks? "))
@@ -242,10 +234,8 @@ def change_data_transmission_range():
 
    cls()
 
-   setup_data = []
+   setup_data = read_setup_data("Setup.txt")
    
-   with open("Setup.txt") as f:
-      setup_data = f.readlines()
    while(True):
       try:
          range = int(input("How many metres? "))
@@ -262,10 +252,8 @@ def change_platform():
 
    cls()
 
-   setup_data = []
+   setup_data = read_setup_data("Setup.txt")
    
-   with open("Setup.txt") as f:
-      setup_data = f.readlines()
    while(True):
       try:
          sim = int(input("Choose the platform:\n1) MCS \n2) FOG-MCS \n3) MEC-MCS\n >> "))
