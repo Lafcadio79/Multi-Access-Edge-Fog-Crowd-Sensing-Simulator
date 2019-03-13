@@ -86,7 +86,7 @@ def execution_change_parameters_menu(c):
       Manage the change parameters menu options      
    """
 
-   if(c in [1,2,3,4, 5]):
+   if(c in [1,2,3,4,5]):
       options2[c]()
       change_parameters_menu()
    elif(c == 6):
