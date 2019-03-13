@@ -110,10 +110,11 @@ def create_a_new_list_of_events():
                plat = "FOG-MCS"
             else:
                plat = "MEC-MCS"
-               
+            # output module
             save_simulation_data(city, param[1], param[3], param[0], plat)
             break
          else:
+            # output module
             output_candidates_for_task('./Inputs/Mobility/Users', './Inputs/Tasks/Tasks.txt', "Outputs/tasks_with_candidates.txt")
             break
             
@@ -233,10 +234,30 @@ def change_number_of_tasks():
          print("Wrong input!")
          
    replace("Setup.txt", setup_data[13], "|Number of tasks|    = {}\n".format(tasks))
+
+def change_data_transmission_range():
+   """
+      Option 4. of the change parameters menu, it allows to modify the data transmission range   
+   """
+
+   cls()
+
+   setup_data = []
+   
+   with open("Setup.txt") as f:
+      setup_data = f.readlines()
+   while(True):
+      try:
+         range = int(input("How many metres? "))
+         break
+      except:
+         print("Wrong input!")
+         
+   replace("Setup.txt", setup_data[14], "|Range of execution| = {}\n".format(range))
    
 def change_platform():
    """
-      Option 4. of the change parameters menu, it allows to modify the type of platform   
+      Option 5. of the change parameters menu, it allows to modify the type of platform   
    """
 
    cls()
@@ -274,4 +295,5 @@ def memo_parameters():
    print("Days:     ", param[0])
    print("Users:    ", param[1])
    print("Tasks:    ", param[3])
+   print("Range:    ", param[4])
    print("Platform: ", plat)

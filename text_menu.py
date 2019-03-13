@@ -61,8 +61,9 @@ def change_parameters_menu():
          print("1. Days")
          print("2. Number of users")
          print("3. Number of tasks")
-         print("4. Type of platform")
-         print("5. Back to main menu")
+         print("4. Data transimission range")         
+         print("5. Type of platform")
+         print("6. Back to main menu")
    
          choice = int(input(" >> "))
          execution_change_parameters_menu(choice)
@@ -85,10 +86,10 @@ def execution_change_parameters_menu(c):
       Manage the change parameters menu options      
    """
 
-   if(c in [1,2,3,4]):
+   if(c in [1,2,3,4, 5]):
       options2[c]()
       change_parameters_menu()
-   elif(c == 5):
+   elif(c == 6):
       main_menu()
    else:
       change_parameters_menu()
@@ -96,4 +97,4 @@ def execution_change_parameters_menu(c):
 # main menu options   
 options1 = {1 : run_a_saved_simulation, 2 : create_a_new_list_of_events, 3: delete_saved_simulations, 4: change_parameters_menu, 5: exit_without_prompt}
 # change parameters menu options
-options2 = {1 : change_number_of_days,2 : change_number_of_users, 3 : change_number_of_tasks, 4 : change_platform}
+options2 = {1 : change_number_of_days,2 : change_number_of_users, 3 : change_number_of_tasks, 4 : change_data_transmission_range, 5 : change_platform}

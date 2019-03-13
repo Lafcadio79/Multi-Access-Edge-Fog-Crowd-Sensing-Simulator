@@ -1,6 +1,6 @@
 ##################################################################################
 # Module: users.py
-# Description: The module provides definitions for creation and reading of user
+# Description: The module provides definitions for creating and reading of user
 #              movements list of events files
 #
 # Created on 24/feb/2019

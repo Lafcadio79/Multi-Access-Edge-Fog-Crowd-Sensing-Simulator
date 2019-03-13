@@ -123,7 +123,7 @@ def read_parameters(filename):
    dur_tsk = int(setup_data[15][23:])   # task duration (in minutes)
    dur_tsl = int(setup_data[16][23:])   # timeslot duration
    plt     = int(setup_data[22][23:])   # platform
-   
+
    return [days, users, locom, num_t, dist, dur_tsk, dur_tsl, plt]
 
    
