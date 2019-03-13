@@ -5,13 +5,13 @@
  ------------------------------------------------------------------------
 
 -------------------------------TIME-------------------------------------
-|Days of simulation| = 5
+|Days of simulation| = 7
 
 -------------------------------USERS------------------------------------
-|Number of users|    = 1000
+|Number of users|    = 15000
 |Locomotion|         = 1
 -------------------------------TASKS------------------------------------
-|Number of tasks|    = 20
+|Number of tasks|    = 100
 |Range of execution| = 500
 |Task duration|      = 60
 |Timeslot duration|  = 60
