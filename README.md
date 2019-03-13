@@ -3,4 +3,4 @@ A python multi-access (edge) fog computing mobile crowd-sensing simulator. The c
 It works with python 3.x versions.
 Additional libraries are required: osmnx, r-tree, tqdm, haversine. They can be easily installed with pip or looking for them at the following link: https://www.lfd.uci.edu/~gohlke/pythonlibs/
 
-Extra functionalities have yet to be implemented. Upgrades are going to be released as soon as possible.
+Extra functionalities have yet to be implemented. Upgrades will be released as soon as possible.
