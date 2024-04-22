@@ -39,7 +39,7 @@ def task_generator(g, n, d, dur, dist, tsl, st, et):
     file.write("id_task lat lon timestamp duration distance timeslots\n")
     for i in range(n):
         timestamp = rd.uniform(st, et)
-        file.write("{} {} {} {} {} {} {}\n".format(i+1, float(g.node[rd.choice(l)]['y']), float(g.node[rd.choice(l)]['x']), timestamp, dur, dist, tsl))
+        file.write("{} {} {} {} {} {} {}\n".format(i+1, float(g.nodes[rd.choice(l)]['y']), float(g.nodes[rd.choice(l)]['x']), timestamp, dur, dist, tsl))
 
     print("Tasks generated:", n)
 

@@ -89,7 +89,6 @@ def create_a_new_list_of_events():
          continue
       else:
          break      
-   
    list_of_events_generator(G, param[1], param[0], param[2], starting_time, end_time)
    task_generator(G, param[3], param[0], param[5], param[4], param[6], starting_time, end_time)
    

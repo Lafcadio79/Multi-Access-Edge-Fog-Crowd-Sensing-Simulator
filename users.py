@@ -46,9 +46,10 @@ def walking_time(g, p, min_s, max_s):
 
     # we assume different speed for each sub-path
     for i in range(1, len(p)):
+
         speed = rd.uniform(min_s, max_s)
-        t1 = (g.node[p[i-1]]['y'], g.node[p[i-1]]['x'])
-        t2 = (g.node[p[i]]['y'], g.node[p[i]]['x'])
+        t1 = (g.nodes[p[i-1]]['y'], g.nodes[p[i-1]]['x'])
+        t2 = (g.nodes[p[i]]['y'], g.nodes[p[i]]['x'])
         dist = hv(t1, t2, 'm')
         seconds[dist / speed] = [t1, t2]
 
@@ -104,12 +105,13 @@ def list_of_events_generator(g, u, d, k, st, et):
 
     file_number = 0
     record_counter = 0
-    
+       
 
     file = open("./Inputs/Mobility/Users/UserMovementsListEvents_{}.txt".format(file_number), 'w')
-    file.write("user_id lat lon timestamp\n")
-
+    file.write("user_id lat lon timestamp\n")	
     print("Generating user movements list of events")
+    
+
 
     #################################################
     #                   Main Cycle                  #
@@ -124,21 +126,23 @@ def list_of_events_generator(g, u, d, k, st, et):
         dst = lst[rdst]
 
         path = nx.shortest_path(g, org, dst, weight='length')
-
+        
         r_start = rd.uniform(st,et)
+        
         wt = walking_time(g, path, min_speed, max_speed)
+        
         w = wt.keys()
+
         nl = []
         et0 = 0
         nl.append(time_update(r_start, et0))
 
-        
         for m in w:
             ct = nl[len(nl)-1]
             nl.append(time_update(ct, m))
 
         for j in range(len(path)):
-            file.write("{} {} {} {}\n".format(i+1, g.node[path[j]]['y'], g.node[path[j]]['x'], nl[j]))
+            file.write("{} {} {} {}\n".format(i+1, g.nodes[path[j]]['y'], g.nodes[path[j]]['x'], nl[j]))
             record_counter += 1
             if(record_counter % 99999 == 0):
                 file_number += 1
@@ -149,6 +153,8 @@ def list_of_events_generator(g, u, d, k, st, et):
         time.sleep(0.01)
     print("Records generated:", record_counter, "\nFiles generated:", file_number+1)
 
+
+    
     file.close()
 
     
