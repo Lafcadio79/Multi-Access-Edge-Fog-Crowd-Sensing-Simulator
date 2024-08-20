@@ -24,7 +24,7 @@ conda create --name=mcsim python=3.8 networkx osmnx haversine tqdm
 conda activate mcsim
 ```
 
-Note that some libraries (e.g., osmnx and haversine) could not be retrieved by "conda install". Alternatively it is possible to install them manually using 'pip' once activated the mcsim environment.
+Note that some libraries (e.g., osmnx and haversine) could not be retrieved by "conda install". Alternatively it is possible to install them using 'pip' once activated the mcsim environment.
 
 ## Configuration
 No further action required.
