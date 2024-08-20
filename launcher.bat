@@ -4,7 +4,7 @@ echo ************************************************
 echo * Multi-access Edge Fog Crowdsensing Simulator *
 echo *                                              *
 echo * @author:   Dimitri Belli                     *
-echo * @contact:  dimitri.belli@di.unipi.it         *
+echo * @contact:  dimitri.belli@isti.cnr.it         *
 echo * @licence:  GPLv3                             *
 echo ************************************************
 
