@@ -24,7 +24,7 @@ from output import *
 
 
 __author__  = "Dimitri Belli"
-__contact__ = "dimitri.belli@di.unipi.it"
+__contact__ = "dimitri.belli@isti.cnr.it"
 __website__ = "still under construction"
 __license__ = "GPL3"
 
