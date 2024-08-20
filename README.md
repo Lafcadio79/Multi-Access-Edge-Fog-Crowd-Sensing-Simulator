@@ -1,5 +1,5 @@
 # Multi-Access Edge Fog CrowdSensing Simulator
-A python multi-access (edge) fog computing mobile crowd-sensing simulator. The current version from a given place creates a user movements list of events and a series of tasks. Subsequently, it computes how many users are able to perform each task on the basis of their distance from the latter. This is what the simulator does, in a nutshell.
+A python multi-access (edge) fog mobile crowdsensing simulator. The current version, from a given place creates a user movements list of events and a series of tasks. Subsequently, it computes how many users are able to perform each task on the basis of their distance from the latter. This is what the simulator does, in a nutshell.
 
 ## Why?
 A MCS campaign involves collecting data through unconventional methods and analyzing it to enhance the areas where it was gathered, such as cities or rural regions. However, planning these campaigns is resource-intensive and costly, requiring significant user recruitment. To mitigate these challenges, running campaigns in a simulated environment that mirrors real-world conditions can be advantageous. To meet this need, we developed a software that simulates the assignment of sensing tasks by an MCS server and their execution by one or multiple users within a chosen real-world scenario.
@@ -16,8 +16,6 @@ The execution of the main code enables the user to perform the following:
 5. exit without prompt.
 
 # Run
-
-## Install
 To run the code is advised to create a conda environment and install all the required dependencies by executing the following steps:
 
 ```
