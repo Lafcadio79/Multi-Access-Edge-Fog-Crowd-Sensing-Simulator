@@ -56,7 +56,7 @@ Multi-Access-Edge-Fog-Crowd-Sensing-Simulator
 └── saved
 ```   
 
-Specifically, the main results are temporarily stored into the `Outputs` folder, and are moved into the `saved` folder at the end of the simulation under request.
+Specifically, the main results are temporarily stored into the `Outputs` folder, and are moved into the `saved` folder at the end of the simulation, if requested.
 
 All the information about the users' movement list of events and tasks are respectively stored in the `Users` folder and in the `Tasks` folder.
 
