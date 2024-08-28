@@ -39,7 +39,7 @@ To launch the program under Windows use the launcher.bat as follows
 launcher.bat
 ```
 
-To run an experiment, select option 2 of the main mnu, then enter the name of the city where you want the simulation to run and press return.  
+To run an experiment, select option 2 of the main menu, then enter the name of the city where you want the simulation to run and press return.  
 
 Before running a new simulation you can modify parameters as the duration (in days), the number of users and tasks, the data transmission range and the kind of platform through option 4 of the main menu.
 
