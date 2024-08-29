@@ -3,8 +3,9 @@
 # Description: The module provides definitions for creating and reading of user
 #              movements list of events files
 #
-# Created on 24/feb/2019
-# @author: Dimitri Belli             
+# Updated on Aug/29/2024
+# @authors: Dimitri Belli, Paolo Barsocchi, Antonino Crivello, Michele Girolami, 
+#           Davide La Rosa       
 # License: GPLv3
 # Web: https://github.com/Lafcadio79/Multi-Access-Edge-Fog-Crowd-Sensing-Simulator
 ##################################################################################
