@@ -1,9 +1,13 @@
 @echo off
 
-echo ************************************************
+echo *************************************************
 echo * Multi-access Edge Fog Crowdsensing Simulator *
 echo *                                              *
-echo * @author:   Dimitri Belli                     *
+echo * @authors:   Dimitri Belli                    *
+echo *             Paolo Barsocchi                  *
+echo *             Antonino Crivello                *
+echo *             Michele Girolami                 *
+echo *             Davide La Rosa                   *
 echo * @contact:  dimitri.belli@isti.cnr.it         *
 echo * @licence:  GPLv3                             *
 echo ************************************************
