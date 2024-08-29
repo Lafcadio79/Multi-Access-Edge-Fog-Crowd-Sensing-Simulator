@@ -2,9 +2,9 @@
 # Module: main.py
 # Description: The main module manages the execution of all simulator's functions 
 # 
-# Created on 24/feb/2019
+# Updated on Aug/29/2024
 # @authors: Dimitri Belli, Paolo Barsocchi, Antonino Crivello, Michele Girolami, 
-#           Davide La Rosa           
+#           Davide La Rosa         
 # License: GPLv3
 # Web: https://github.com/Lafcadio79/Multi-Access-Edge-Fog-Crowd-Sensing-Simulator
 ##################################################################################
