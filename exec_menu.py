@@ -238,7 +238,7 @@ def change_data_transmission_range():
    
    while(True):
       try:
-         range = int(input("How many metres? "))
+         range = int(input("How many meters? "))
          break
       except:
          print("Wrong input!")
