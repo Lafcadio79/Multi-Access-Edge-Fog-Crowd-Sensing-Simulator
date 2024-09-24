@@ -55,8 +55,6 @@ Multi-Access-Edge-Fog-Crowd-Sensing-Simulator
 ├── Outputs
 └── saved
 ```   
-## Illustrative example
-<video src="https://github.com/Lafcadio79/Multi-Access-Edge-Fog-Crowd-Sensing-Simulator/blob/master/pamplona.mp4" width=180></video>
 
 Specifically, the main results are temporarily stored into the `Outputs` folder, and are moved into the `saved` folder at the end of the simulation, if requested.
 
