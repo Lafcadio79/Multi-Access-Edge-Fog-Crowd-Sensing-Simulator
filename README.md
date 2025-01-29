@@ -61,7 +61,16 @@ Specifically, the main results are temporarily stored into the `Outputs` folder,
 All the information about the users' movement list of events and tasks are respectively stored in the `Users` folder and in the `Tasks` folder.
 
 ## Plot Renderer
-We have added a Jupyter notebook that demonstrates the generation of figures from the data produced by the simulator. Specifically, the notebook processes the user movement list, task deployment, and task assignment to generate a sample user trajectory over a map and a bar graph showing the number of users able to contribute to the execution of each task. 
+We have added a Jupyter notebook that demonstrates the generation of figures from the data produced by the simulator. Specifically, the notebook processes the user movement list, task deployment, and task assignment to generate a sample user trajectory over a map and a bar graph showing the number of users able to contribute to the execution of each task.
+To run the code is advised to create a conda environment and install all the required dependencies by executing the following steps:
+
+```
+conda create --name=MCSim python=3.8 jupyter numpy pandas seaborn
+conda activate MCSim
+jupyter notebook plots.ipynb
+```
+
+Alternatively, it is possible to run the notebook using the sole Jupyter Lab, just remember to include the following dependencies: numpy, pandas, and seaborn.
 
 # Contributing
 If you find something missing, wrong or you want to suggest an improvement you are welcome to notify it by writing an email to the corresponding author: dimitri.belli@isti.cnr.it.
