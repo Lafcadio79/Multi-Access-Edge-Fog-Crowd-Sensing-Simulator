@@ -61,7 +61,7 @@ Specifically, the main results are temporarily stored into the `Outputs` folder,
 All the information about the users' movement list of events and tasks are respectively stored in the `Users` folder and in the `Tasks` folder.
 
 ## Plot Renderer
-We have added a Jupyter notebook that demonstrates the generation of figures from the data produced by the simulator. Specifically, the notebook processes the user movement list, task deployment, and task assignment to generate a sample user trajectory over a map and a bar graph showing the number of users able to contribute to the execution of each task.
+We have added a Jupyter notebook that demonstrates the generation of figures from the data produced by the simulator. Specifically, the notebook processes the user movement list, task deployment, and task assignment to generate a sample user trajectory over a map and a bar plot showing the number of users able to contribute to the execution of each task.
 To run the code is advised to activate the previously created conda environment and launch the notebook by executing the following steps:
 
 ```
