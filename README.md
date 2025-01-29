@@ -20,7 +20,7 @@ To run the code is advised to create a conda environment and install all the req
 
 ```
 cd Multi-Access-Edge-Fog-Crowd-Sensing-Simulator
-conda create --name=mcsim python=3.8 networkx osmnx haversine tqdm jupyter numpy pandas seaborn
+conda create --name=mcsim python=3.8 networkx osmnx haversine tqdm jupyter folium numpy pandas seaborn
 conda activate mcsim
 ```
 
