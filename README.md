@@ -20,7 +20,7 @@ To run the code is advised to create a conda environment and install all the req
 
 ```
 cd Multi-Access-Edge-Fog-Crowd-Sensing-Simulator
-conda create --name=mcsim python=3.8 networkx osmnx haversine tqdm
+conda create --name=mcsim python=3.8 networkx osmnx haversine tqdm jupyter numpy pandas seaborn
 conda activate mcsim
 ```
 
@@ -62,10 +62,9 @@ All the information about the users' movement list of events and tasks are respe
 
 ## Plot Renderer
 We have added a Jupyter notebook that demonstrates the generation of figures from the data produced by the simulator. Specifically, the notebook processes the user movement list, task deployment, and task assignment to generate a sample user trajectory over a map and a bar graph showing the number of users able to contribute to the execution of each task.
-To run the code is advised to create a conda environment and install all the required dependencies by executing the following steps:
+To run the code is advised to activate the previously created conda environment and launch the notebook by executing the following steps:
 
 ```
-conda create --name=MCSim python=3.8 jupyter numpy pandas seaborn
 conda activate MCSim
 jupyter notebook plots.ipynb
 ```
