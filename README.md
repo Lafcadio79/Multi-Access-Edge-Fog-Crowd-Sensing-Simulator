@@ -5,7 +5,7 @@ A python multi-access (edge) fog mobile crowdsensing simulator. The current vers
 A MCS campaign involves collecting data through unconventional methods and analyzing it to enhance the areas where it was gathered, such as cities or rural regions. However, planning these campaigns is resource-intensive and costly, requiring significant user recruitment. To mitigate these challenges, running campaigns in a simulated environment that mirrors real-world conditions can be advantageous. To meet this need, we developed a software that simulates the assignment of sensing tasks by an MCS server and their execution by one or multiple users within a chosen real-world scenario.
 
 ## Abstract
-Set up a living-lab project as a Mobile CrowdSensing (MCS) campaign  for real-world data collection and processing is a costly task both in terms of resources to be allocated and people to be recruited. Consequently, it is often advisable to use simulators that accurately replicate real-world scenarios, as they can offer reliable insights into the system's effectiveness and efficiency, particularly when evaluating the theoretical system's practical functionality. Considering this, we introduce a task execution simulator for MCS, that can generate user mobility patterns and evaluate their effectiveness in performing sensing tasks within a specified transceiver range in a given urban environment. This article explains how the simulator works, including the user interface, settings, execution and interpretation of results.
+This work presents MCSim, a task execution simulator for Mobile CrowdSensing (MCS) campaigns that uniquely combines the generation of realistic user mobility patterns with the evaluation of sensing task effectiveness within specified transceiver ranges in urban environments. Unlike previous simulators, MCSim provides a comprehensive yet easy-to-use platform that integrates detailed customization, intuitive execution, and robust results analysis. This makes it an indispensable tool for optimizing MCS strategies while reducing costs and deployment risks.
 
 ## What the code does
 The execution of the main code enables the user to perform the following:
@@ -59,6 +59,9 @@ Multi-Access-Edge-Fog-Crowd-Sensing-Simulator
 Specifically, the main results are temporarily stored into the `Outputs` folder, and are moved into the `saved` folder at the end of the simulation, if requested.
 
 All the information about the users' movement list of events and tasks are respectively stored in the `Users` folder and in the `Tasks` folder.
+
+## Plot Renderer
+We have added a Jupyter notebook that demonstrates the generation of figures from the data produced by the simulator. Specifically, the notebook processes the user movement list, task deployment, and task assignment to generate a sample user trajectory over a map and a bar graph showing the number of users able to contribute to the execution of each task. 
 
 # Contributing
 If you find something missing, wrong or you want to suggest an improvement you are welcome to notify it by writing an email to the corresponding author: dimitri.belli@isti.cnr.it.
