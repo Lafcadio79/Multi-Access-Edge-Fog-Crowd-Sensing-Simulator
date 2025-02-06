@@ -2,7 +2,7 @@
 # Module: main.py
 # Description: The main module manages the execution of all simulator's functions 
 # 
-# Updated on Aug/29/2024
+# Updated on Feb/07/2025
 # @authors: Dimitri Belli, Paolo Barsocchi, Antonino Crivello, Michele Girolami, 
 #           Davide La Rosa         
 # License: GPLv3
