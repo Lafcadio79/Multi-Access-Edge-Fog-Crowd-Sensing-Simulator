@@ -3,7 +3,7 @@
 # Description: The module provides utility functions for configuration, computing, 
 #              writing and reading to and from file, and simulation data saving
 # 
-# Updated on Aug/29/2024
+# Updated on Feb/07/2025
 # @authors: Dimitri Belli, Paolo Barsocchi, Antonino Crivello, Michele Girolami, 
 #           Davide La Rosa          
 # License: GPLv3
