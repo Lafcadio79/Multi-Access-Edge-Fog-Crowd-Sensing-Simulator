@@ -3,7 +3,7 @@
 # Description: The module manages the user's communication interface through a  
 #              series of command line menus (execution)
 # 
-# Updated on Aug/29/2024
+# Updated on Feb/07/2025
 # @authors: Dimitri Belli, Paolo Barsocchi, Antonino Crivello, Michele Girolami, 
 #           Davide La Rosa          
 # License: GPLv3
