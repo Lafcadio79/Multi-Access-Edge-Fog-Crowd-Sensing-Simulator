@@ -26,6 +26,8 @@ conda activate mcsim
 
 Note that some libraries (e.g., osmnx and haversine) could not be retrieved by "conda install". Alternatively it is possible to install them using 'pip' once activated the mcsim environment.
 
+Also note that the requirements.txt has been added to facilitate dependency management. You can refer to its contents to find out which version of the required libraries is needed.
+
 ## Configuration
 No further action required.
 
