@@ -79,7 +79,7 @@ If you find something missing, wrong or you want to suggest an improvement you a
 # Citation
 If you use this code or data in your research, please cite the following paper:
 ```
-Belli, D., Barsocchi, P., Crivello, A., La Rosa, D., Girolami, M.: MCSim: A Multi-access Edge Computing Mobile CrowdSensing Simulator, SoftwareX, Vol. 31, 2025, 102229, ISSN 2352-7110, DOI:10.1016/j.softx.2025.102229
+Belli, D., Barsocchi, P., Crivello, A., La Rosa, D., Girolami, M.: MCSim: A Multi-access Edge Computing Mobile CrowdSensing Simulator, SoftwareX, Vol. 31: 102229, 2025, DOI:10.1016/j.softx.2025.102229
 ```
 
 # Authors
