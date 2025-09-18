@@ -76,5 +76,17 @@ Alternatively, it is possible to run the notebook using the sole Jupyter Lab, ju
 # Contributing
 If you find something missing, wrong or you want to suggest an improvement you are welcome to notify it by writing an email to the corresponding author: dimitri.belli@isti.cnr.it.
 
+# Citation
+If you use this code or data in your research, please cite the following paper:
+@article{belli2025mcsim,
+  title={MCSim: A Multi-access Edge Computing Mobile CrowdSensing simulator},
+  author={Belli, Dimitri and Barsocchi, Paolo and Crivello, Antonino and La Rosa, Davide and Girolami, Michele},
+  journal={SoftwareX},
+  volume={31},
+  pages={102229},
+  year={2025},
+  publisher={Elsevier}
+}
+
 # Authors
 Dimitri Belli, Paolo Barsocchi, Antonino Crivello, Michele Girolami and Davide La Rosa
