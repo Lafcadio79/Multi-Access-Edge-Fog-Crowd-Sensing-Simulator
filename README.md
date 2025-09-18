@@ -77,7 +77,7 @@ Alternatively, it is possible to run the notebook using the sole Jupyter Lab, ju
 If you find something missing, wrong or you want to suggest an improvement you are welcome to notify it by writing an email to the corresponding author: dimitri.belli@isti.cnr.it.
 
 # Citation
-If you use this code in your research, please cite the following paper:
+If you use our code in your research, please cite the following paper:
 ```
 Belli, D., Barsocchi, P., Crivello, A., La Rosa, D., Girolami, M.: MCSim: A Multi-access Edge Computing Mobile CrowdSensing Simulator, SoftwareX, Vol. 31: 102229, 2025, DOI:10.1016/j.softx.2025.102229
 ```
